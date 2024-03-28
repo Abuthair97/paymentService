@@ -6,8 +6,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/RazorpayWebhook")
-public class RazorpayWebHookController {
+@RequestMapping("/stripeWebHook")
+public class StripePayWebHookController {
+
     @PostMapping("/")
     public ResponseEntity acceptWebHookRequest(){
         System.out.println("Hello world");

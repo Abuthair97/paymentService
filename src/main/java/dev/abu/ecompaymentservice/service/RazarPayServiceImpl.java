@@ -30,7 +30,7 @@ public class RazarPayServiceImpl implements PaymentService{
         notify.put("sms", true);
         notify.put("email", true);
         paymentLinkRequest.put("notify", notify);
-        paymentLinkRequest.put("callback_url", "http://localhost:8080//RazorpayWebhook");
+        paymentLinkRequest.put("callback_url", "http://localhost:8080/RazorpayWebhook");
         paymentLinkRequest.put("callback_method", "post");
 
         PaymentLink response  = razorpayClient.paymentLink.create(paymentLinkRequest);
